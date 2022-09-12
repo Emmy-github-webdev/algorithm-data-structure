@@ -11,6 +11,17 @@ Hint: Work through the code line by line, writing down the values of items in th
 
 Once implemented, uncomment the Program.assertEqual() at the bottom to verify that the test assertion passes.
 */
+
+/*
+## Pseudocode
+
+There are many different ways to sort the cards. Here's a simple one, called selection sort, possibly similar to how you sorted the cards above:
+Find the smallest card. Swap it with the first card.
+Find the second-smallest card. Swap it with the second card.
+Find the third-smallest card. Swap it with the third card.
+Repeat finding the next-smallest card, and swapping it into the correct position until the array is sorted.
+This algorithm is called selection sort because it repeatedly selects the next-smallest element and swaps it into place.
+*/
 var swap = function(array, firstIndex, secondIndex){
   var temp = array[firstIndex];
   array[firstIndex] = array[secondIndex];
