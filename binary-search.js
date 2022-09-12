@@ -33,3 +33,28 @@ var primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37,
 
 var result = doSearch(primes, 73);
 println("Found prime at index " + result);
+
+/*
+We have several different types of functions here, so we start by thinking about the general properties of those function types and how their rate of growth compares. Here's a reminder of different function types, in order of their growth:
+Constant functions
+Linear functions
+Polynomial functions
+Exponential functions
+Hint #22 / 4
+Which type is each of the presented options?
+Constant functions:
+111
+Linear functions:
+nnn
+Polynomial functions:
+n^2n 
+2
+ n, squared, n^3n 
+3
+ n, cubed
+Exponential functions:
+2^n2 
+n
+ 2, start superscript, n, end superscript, (3/2)^n(3/2) 
+n
+*/
