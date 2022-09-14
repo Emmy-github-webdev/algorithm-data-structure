@@ -37,3 +37,15 @@ println("Array after inserting 9:  " + array);
 insert(array, 6, 6);
 println("Array after inserting 6:  " + array);
 //Program.assertEqual(array, [2, 3, 5, 6, 7, 9, 11, 13]);
+
+
+/**
+ * Insertion sort pseudocode
+ * 
+ * Now that you know how to insert a value into a sorted subarray, you can implement insertion sort:
+Call insert to insert the element that starts at index 1 into the sorted subarray in index 0.
+Call insert to insert the element that starts at index 2 into the sorted subarray in indices 0 through 1.
+Call insert to insert the element that starts at index 3 into the sorted subarray in indices 0 through 2.
+…
+Finally, call insert to insert the element that starts at index n-1n−1n, minus, 1 into the sorted subarray in indices 0 through n-2n−2n, minus, 2.
+ */

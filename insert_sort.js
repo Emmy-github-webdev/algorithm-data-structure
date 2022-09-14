@@ -1,16 +1,19 @@
-function insertion_Sort(input_array, array_length)
-{
-    let i, pivot_value, j;  
-    for (i = 1; i = 0 && input_array[j] > pivot_value)
-        {
-            input_array[j + 1] = input_array[j];
-            j = j - 1;
-        }
-        input_array[j + 1] = pivot_value;
-    }
-    return input_array;
-}  
-let input_array = [15,47,25,55,20,10 ];
-let array_length = input_array.length;
-insertion_Sort(input_array, array_length);
-console.log("final sorted array : ", input_array);
+var insert = function(array, rightIndex, value) {
+  for(var j = rightIndex;
+      j >= 0 && array[j] > value;
+      j--) {
+      array[j + 1] = array[j];
+  }   
+  array[j + 1] = value; 
+};
+
+var insertionSort = function(array) {
+for (var i = 1; i < array.length; i++){
+   insert(array, i - 1, array[i]);
+}
+};
+
+var array = [22, 11, 99, 88, 9, 7, 42];
+insertionSort(array);
+println("Array after sorting:  " + array);
+Program.assertEqual(array, [7, 9, 11, 22, 42, 88, 99]);
