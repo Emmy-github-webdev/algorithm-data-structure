@@ -34,3 +34,4 @@ swap(testArray, 0, 1);
 println(testArray);
 
 Program.assertEqual(testArray, [9, 7, 4]);
+
